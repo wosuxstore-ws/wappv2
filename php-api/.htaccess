@@ -1,0 +1,5 @@
+# Block direct browser access to config.php so credentials can never be viewed/downloaded
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>

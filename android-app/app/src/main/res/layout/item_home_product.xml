@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One static product tile. Colors / icon / price are set by HomeProductAdapter. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_tile">
+
+    <ImageView
+        android:id="@+id/tileIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Product"
+        tools:src="@drawable/ic_bag" />
+
+    <TextView
+        android:id="@+id/tilePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/home_title"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_bold"
+        tools:text="Rs. 89.00" />
+
+    <ImageView
+        android:id="@+id/tileEdit"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_circle_white"
+        android:padding="12dp"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="Edit product"
+        app:tint="@color/home_title" />
+</FrameLayout>
